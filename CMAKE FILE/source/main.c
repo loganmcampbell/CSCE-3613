@@ -32,8 +32,7 @@ int main()
       {
         printf("\nF A C T O R I A L \n");
         //function execute
-
-
+        factorial();
       }
       else if (i == 3)
       {
