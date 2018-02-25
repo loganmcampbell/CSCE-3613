@@ -13,13 +13,13 @@ int main()
     printf("[2]  FOR COMPUTING THE FACTORIAL\n");
     printf("[3]  FOR COMPUTING THE GREATEST NUMBER FROM 3 INTERGERS\n");
     printf("[4]  FOR FINDING ALL PRIME NUMBERS (SMALLER THAN INPUT INTEGER)\n");
-    printf("[5]  TO EXIT\n\n");
+    printf("[5]  TO EXIT\n");
 
     char done = 'f';
     while (done == 'f')
     {
       int i;
-      printf("ENTER IN NUMBER : ");
+      printf("\nENTER IN NUMBER : ");
       scanf("%d",&i );
 
       if ( i == 1)
@@ -33,6 +33,7 @@ int main()
         printf("\nF A C T O R I A L \n");
         //function execute
 
+
       }
       else if (i == 3)
       {
@@ -44,7 +45,7 @@ int main()
       {
         printf("\nP R I M E | N U M B E R S | < I N P U T\n" );
         //function execute
-
+        prime();
       }
       else if (i == 5)
       {

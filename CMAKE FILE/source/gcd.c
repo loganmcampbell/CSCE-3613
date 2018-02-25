@@ -14,4 +14,5 @@ int gcd(void)
   }
   printf("%d is the greastest common factor", gcd);
   printf("\n");
+  
 }
