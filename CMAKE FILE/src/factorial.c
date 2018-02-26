@@ -1,3 +1,4 @@
+#include "headers/factorial.h"
 int factorial(void)
 {
   int number;
@@ -5,15 +6,6 @@ int factorial(void)
   scanf("%d", &number);
 
   printf("You entered: %d\n", number );
-
-  int fact (int num)
-  {
-    if (num <= 1)
-    {
-      return 1;
-    }
-      return num * (fact(num-1));
-  }
 
   int new = fact(number);
 

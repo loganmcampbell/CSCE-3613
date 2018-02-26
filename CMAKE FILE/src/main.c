@@ -48,6 +48,7 @@ int main()
       }
       else if (i == 5)
       {
+        printf("\nT E R M I N A T I N G . . . \n");
         done = 't';
       }
 

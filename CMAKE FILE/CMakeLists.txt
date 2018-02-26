@@ -8,5 +8,6 @@
 #This tells CMake to main.c and name it numerical
 #add_executable(numerical main.c)
 
-PROJECT ( programcmake )
+#PROJECT ( programcmake )
+add_executable(numerical main.c)
 ADD_SUBDIRECTORY (src)
