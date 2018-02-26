@@ -1,13 +1,20 @@
-#sudo apt-get install cmake cmake-curses-gui
-#Specify the version being used as well as the language
-#cmake_minimum_required(VERSION 2.6)
-#Name your project here
-#project(numerical)
-#Sends the -std=c99 flag to the gcc compiler
-#add_definitions(-std=c99)
-#This tells CMake to main.c and name it numerical
-#add_executable(numerical main.c)
+#make_mininum_required(VERSION 2.8)
+#project(main)
 
-#PROJECT ( programcmake )
-add_executable(numerical main.c)
-ADD_SUBDIRECTORY (src)
+#add_library(factorial factorial.c)
+#add_library(gcd gcd.c)
+#add_library(gn3 gn3.c)
+#add_library(prime prime.c)
+
+
+#add_exectuable(main main.c)
+#target_link_libraries(factorial main)
+#target_link_libraries(gcd main)
+#target_link_libraries(gn3 main)
+#target_link_libraries(prime main)
+
+cmake_minimum_required(VERSION 2.8)
+project(main)
+set(CMAKE_C_FLAGS "-std=c99")
+include_directories("/src")
+add_executable(main main.c)
